@@ -1,0 +1,16 @@
+.wrapper {
+  background: url('./round.png')repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: auto;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  }
+
+  @media (max-width: 767px) {
+    .wrapper{
+      flex-direction:column;
+    }
+}

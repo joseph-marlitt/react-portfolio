@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "name": "Park Explorer",
+        "link": "https://joseph-marlitt.github.io/Park-Explorer/",
+        "image": "./assets/images/parkexplorer.jpeg",
+        "alt": "ParkExplorerImage",
+        "description": "Explore recent photos of our beautifal National Parks in our country! Created using JQuery, MySql, Node.js, Google Maps API, Handlebars.js"
+    },
+    {
+        "id":2,
+        "name": "Giphy Search Engine",
+        "link": "https://joseph-marlitt.github.io/giphy-api/",
+        "image": "./assets/images/gif.gif",
+        "alt": "GiphyImage",
+        "description": "Any word, any term, This GIF finder does not discriminate! Created with HTML, AJAX, JQuery, JSON, Giphy Web API."
+    },
+    {
+        "id":3,
+        "name": "Fruit Game",
+        "link": "https://joseph-marlitt.github.io/Park-Explorer/",
+        "image": "./assets/images/fruit.png",
+        "alt": "FruitGameImage",
+        "description": "A simple fruit game. Can you hit the number exactly? Pick different fruits. Good Luck!"
+    },
+    {
+        "id":4,
+        "name": "Southpark Memory Game",
+        "link": "https://joseph-marlitt.github.io/Park-Explorer/",
+        "image": "./assets/images/southpark.jpg",
+        "alt": "SouthparkImage",
+        "description": "A memory game created with React.js that tests your facial memory skills."
+    }
+]

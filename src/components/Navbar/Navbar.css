@@ -1,0 +1,139 @@
+ul {
+    padding: 0;
+    list-style: none;
+  }
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0 3px 0 3px;
+    width: 81px
+}
+.navbar-container{
+    min-height: 100%;
+    border-right: solid;
+    border-right-width: thin;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    margin-top: 0px;
+    padding: 0 15px;
+    height: 100vh;
+    max-width: 210px;
+}
+.icon-container{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+.navButton {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+    border-style: none;
+    background-color:transparent;
+    color: #181818;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.title{
+font-size: 15px;
+font-family: 'Montserrat', sans-serif;
+}
+.iconImage{
+    max-width: 30px;
+}
+.description{
+    margin-top: -20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+.copyright{
+    font-size: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+.navButton:hover {
+    background-color: rgb(120, 121, 120); /* Green */
+    color: white;
+    cursor: pointer;
+}
+
+.m-navbar{
+    height: auto;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.m-header{
+    width: 100vh;
+    height: auto;
+    display: flex;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    margin-bottom: 20px;
+}
+.m-title, .m-description {
+    margin: 0 0 6px 10px;
+}
+
+.dropdown {
+    text-align: center;
+    margin:auto;
+    visibility: hidden;
+    width: inherit;
+    background-color: inherit;
+    opacity: 0;
+    margin-right:30px;
+    position: absolute;
+    transition: all 0.5s ease;
+    border-radius: inherit;
+    color: inherit;
+    min-width: 5rem;
+  }
+
+  .m-search{
+      text-align: center;
+      background-color: #0085d3;
+      color: white;
+      height: 30px;
+      width: 100px;
+      margin-left:auto;
+      cursor: pointer;
+      margin-right: 5vw;
+      padding-top: 10px;
+      border-radius: 5px;
+  }
+
+.m-search:hover > .dropdown,
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  cursor: pointer;
+}
+
+.m-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  color: white;
+  transition-duration: 0.5s;
+
+}
+
+.m-button:hover {
+    background-color: #49a7dd;
+  }
+  
+
+@media (max-width: 767px) {
+    .navbar{
+        display: none;
+        visibility: hidden;
+    }
+    .m-navbar{
+        display: flex;
+    }
+}

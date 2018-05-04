@@ -1,0 +1,12 @@
+.form-title{
+  text-align: center;
+}
+
+.form-container{
+  border-radius: 10px;
+  width: 40vw;
+  margin: auto;
+  background-color: #dddd;
+  margin-top: 3vh;
+  margin-bottom: 7vh;
+  }

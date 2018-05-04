@@ -1,0 +1,33 @@
+
+.image {
+  text-decoration: none !important;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  transition: transform .3s; /* Animation */
+  width: 250px;
+  background-color: #c3d9e0;
+  object-fit: center;
+}
+  
+.img-responsive{
+  height: 200px;
+  width:100%;
+  object-fit: center;
+}
+
+.image:hover{
+  cursor: pointer;
+  transform: scale(1.1); 
+}
+.container{
+  height: 25%;
+  width: auto;
+  padding: 2px 16px;
+}
+
+ 
