@@ -1,9 +1,9 @@
 import "./Form.css"
 import React from 'react';
-import { render } from 'react-dom';
 import { withFormik } from 'formik';
 import Yup from 'yup';
 import classnames from 'classnames';
+import { Redirect } from "react-router-dom";
 
 
 const formikEnhancer = withFormik({
@@ -19,9 +19,13 @@ const formikEnhancer = withFormik({
       .required('Tell me something good!')
     }),
   
-    handleSubmit: (payload, { setSubmitting }) => {
-      alert(payload.email);
-      setSubmitting(false);
+    handleSubmit: (payload) => {
+      window.emailjs.send("<YOUR SERVICE ID>","<YOUR TEMPLATE ID>",{firstName: payload.firstName, lastName: payload.lastName, email: payload.email, content: payload.content})
+      .then(function(response) {
+         console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+      }, function(err) {
+         console.log("FAILED. error=", err);
+      });
     },
     displayName: 'MyForm',
   });
@@ -119,12 +123,9 @@ const formikEnhancer = withFormik({
       values,
       touched,
       errors,
-      dirty,
       handleChange,
       handleBlur,
       handleSubmit,
-      handleReset,
-      isSubmitting,
     } = props;
     return (
       <form onSubmit={handleSubmit}>

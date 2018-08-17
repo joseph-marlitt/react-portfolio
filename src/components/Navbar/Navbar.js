@@ -3,6 +3,8 @@ import "./Navbar.css"
 import github from "../../images/github.png"
 import linkedin from "../../images/linkedin.png"
 import nav from "../../images/nav.png"
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import faDown from '@fortawesome/fontawesome-free-solid/faAngleDoubleDown'
 
 const Navbar = () =>
 <div>
@@ -26,7 +28,7 @@ const Navbar = () =>
                 <li className="m-title">Joseph Marlitt</li>
                 <li className="m-description">Full Stack Developer</li>
             </ul>
-            <li className="m-search"> <i class="fas fa-bars"></i>
+            <li className="m-search"> <FontAwesomeIcon icon={faDown} />
                 <ul className="dropdown" role="navigation" src={nav} alt="navigation">
                     <li className="m-button"><a href="/portfolio">Portfolio</a></li>
                     <li className="m-button"><a href="/Contact">Contact</a></li>
